@@ -1,0 +1,402 @@
+/*
+    Theme Name:
+    Theme URI: 
+    Author: 
+    Author URI: https://
+    Description: Creative  HTML5 template.
+    Version: 1.0
+    License: 
+    License URI: 
+    Text Domain: 
+    Tags: 
+*/
+
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+/*font-family: 'Roboto', sans-serif;*/
+/*font-family: 'Montserrat', sans-serif;*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: transparent;
+}
+
+:root {
+    --rc-primary: 0, 0%, 24%;/*#3C3C3C*/
+    --rc-secondry: 39, 95%, 54%;/*#F9AC19*/
+    --rc-accent: 171, 72%, 69%;/* #77e9d8 */
+    --rc-white: #fff;
+
+    --ff-primary: 'Roboto', sans-serif;
+    --ff-heading: 'Montserrat', sans-serif;
+    --ff-btn: var(var(--ff-heading));
+
+    --fw-900: 900;
+    --fw-700: 700;
+    --fw-500: 500;
+    --fw-400: 400;
+
+}
+
+body {
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-400);
+    color: hsl(hsl(var(--rc-primary),1),1);
+    font-size: 1rem;
+    font-style: normal;   
+    background: hsl(var(--rc-accent),1); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+img {
+    width: 100%;
+}
+
+a,
+.button {
+    transition: all 0.3s ease-out 0s;
+    text-decoration: none;
+}
+
+a:focus,
+.button:focus {
+    outline: transparent;    
+}
+a:focus,
+a:hover {
+    color: hsl(var(--rc-accent), 1);    
+}
+a {
+    color: hsl(var(--rc-secondry), 1);
+}
+.button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: var(--fw-700);
+    text-transform: capitalize;
+    border: 1px solid hsl(var(--rc-secondry), 1);
+    background: hsl(var(--rc-secondry), 1);
+    border-radius: 5px;
+}
+.button:hover {
+    color: hsl(var(--rc-secondry), 1);
+    background: hsl(var(--rc-primary),1);
+    border: 1px solid hsl(var(--rc-primary),1);
+}
+.button:focus,
+input:focus,
+textarea,
+textarea:focus {
+    outline: 0;
+}
+input:focus {
+    background: hsl(var(--rc-secondry), 0.1);
+    color: hsl(var(--rc-primary),1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--ff-heading);
+    color: hsl(var(--rc-primary),1);
+    font-weight: var(--fw-700);
+    text-transform: capitalize;
+}
+p {
+    line-height: 1.5;
+}
+label {
+    color: hsl(var(--rc-primary),1);
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-weight: var(--fw-400);
+}
+*::selection,
+::selection {
+    background: hsl(var(--rc-accent), 0.5);
+    color: hsl(var(--rc-primary),1);
+    text-shadow: none;
+}
+*::placeholder {
+    color: hsl(var(--rc-primary),1);
+    font-size: 1rem;
+    opacity: 0.5;
+}
+/* ======================================================================================= */
+
+/* Registration Form Css */
+/* .form-container {
+    width: 37vw;
+    background: var(--rc-white);
+    margin: 0 auto;
+    padding: 1.5rem 3rem;
+    border-radius: 10px;
+} */
+.form-container {
+    width: 37vw;
+    background: var(--rc-white);
+    margin: 0 auto;
+    padding: 2.5rem 3rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.form-container {
+    height: 97vh;
+}
+
+.form-container--reg-with {
+    height: 98vh;
+}
+
+.form-container--login {
+    height: 92vh;
+}
+
+.form-container-pass-forgot {
+    height: 40vh;
+}
+
+.form-container--otp-verify-form {
+    height: 51vh;
+}
+
+.form-container-pass-forgot--resetpass {
+    height: 60vh;
+    text-align: center;
+}
+
+.brand-area a {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 1.5rem;
+}
+.brand {
+    width: 4vw;
+}
+.brand-name {
+    font-size: 1.75rem;
+    margin-bottom: 0.3rem;
+    color: hsl(var(--rc-secondry), 1);;
+    font-weight: var(--fw-500);
+}
+/* Text Brand Name */
+/* .brand {
+    font-size: 2.2rem;
+    margin-bottom: 1.2rem;
+    color: hsl(var(--rc-secondry), 1);
+} */
+
+.form-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.form-grp {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pass-show-eye--reg {
+    position: absolute;
+    right: 15px;
+    top: 32px;
+}
+.form-grp label {
+    margin-bottom: 0.35rem;
+    width: 100%;
+    text-align: start;
+    font-weight: 600;
+}
+.form-grp input {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.6rem 2.5rem 0.6rem 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #3c3c3c4a;
+    border-radius: 3px;
+}
+.form-check-area {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    margin-bottom: 2rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.form-check-area input {
+    width: 20px;
+    padding: 0;
+    box-shadow: none;
+    border: none;
+    margin-right: 0.5rem;
+}
+
+.terms-link {
+    text-decoration: underline;
+}
+.button-primary--reg {
+    color: var(--rc-white);
+}
+
+.form-footer {
+    text-align: center;
+    margin-top: 0.75rem;
+}
+
+.login-link {
+    text-decoration: underline;
+}
+
+/* =================================================================== */
+/* Registration form with css */
+
+.brand-area--reg-with a {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 1rem;
+}
+.pass-show-eye--reg-with {
+    position: absolute;
+    right: 15px;
+    top: 7px;
+}
+.button-primary--reg-with {
+    color: var(--rc-white);
+}
+.form-footer-text--reg-with {
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.divider {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1.5rem;
+    align-items: center;
+}
+.divider hr {
+    width: 45%;
+    opacity: 0.5;
+}
+
+.fb-login-button {
+    display: flex;
+    margin-bottom: 1rem;
+    padding: 0.7rem;
+    align-items: center;
+}
+.fb-icon {
+    color: #581bff;
+    margin-left: 0.5rem;
+}
+.fb-icon .bx-border-circle {
+    background: var(--rc-white);
+    border: none;
+}
+.button-primary--reg-with:hover .fb-icon {
+    color: #fff;
+}
+.button-primary--reg-with:hover .fb-icon .bx-border-circle {
+    background: #581bff;
+}
+.fb-icon .bx {
+    font-size: 1.2rem;
+}
+.fb-signup-text {
+    width: 100%;
+}
+.google-login-button {
+    margin: 0;
+    display: flex;
+    padding: 0.7rem;
+    align-items: center;
+    background: transparent;
+    color: hsl(var(--rc-primary),1);
+    border: 1px solid hsl(var(--rc-primary), 0.3);
+}
+.google-icon {
+    width: 1.5vw;
+    margin-left: 0.5rem;
+}
+.google-signup-text{
+    width: 100%;
+}
+
+
+/* ======================================================= */
+/* Login Page Css */
+
+.form-grp-signin input {
+    padding: 1rem 2.5rem 1rem 1rem;
+}
+.pass-show-eye--signin {
+    position: absolute;
+    right: 15px;
+    top: 13px;
+}
+.pass-forgot-text {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+.divider-signin {
+    margin: 0;
+    padding: 1rem 0rem;
+}
+.divider-signin hr {
+    opacity: 0.5;
+}
+
+/* =========================================================== */
+/* Forgot Password CSS */
+
+.title-pass-forgot {
+    margin-bottom: 1.5rem;
+    color: hsl(var(--rc-secondry), 1);
+    font-size: 1.5rem;
+    text-align: center;
+}
+.text-pass-forgot,
+.text-reset-pass {
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+    text-transform: none;
+}
+/* =========================================================== */
+/* Rest Password CSS */
+
+.text-reset-pass {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem 0rem;
+    background: hsl(var(--rc-accent), 0.2);
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+    font-weight: var(--fw-500);
+    line-height: 1.5;
+}
+.text-otp-verify {
+    padding: 1rem 0.7rem;
+    text-align: center;
+}
+.text-otp-verify span {
+    display: block;
+}
+
+
