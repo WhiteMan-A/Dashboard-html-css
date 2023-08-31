@@ -11,73 +11,134 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container-dashboard">
-        <aside>
-            <div class="top">
-                <div class="logo">
-                    <img src="assets/img/brand-logo.png" alt="">
-                    <h2>Company Name</h2>
-                </div>
-                <div class="close" id="close-btn">
-                    <span><i class='bx bx-x'></i></span>
-                </div>
+    <!-- Sidebar area start here -->
+    <section class="sidebar">
+        <div class="sidebar--brand">
+            <a href="#" class="brand">
+                <img src="assets/img/brand-logo.png" alt="">
+                <h2 class="brand-name">Company Name</h2> 
+            </a>
+        </div>
+        <div class="sidebar--menu">
+            <ul>
+                <li class="menu-list active">
+                    <a href="#"><span><i class='bx bxs-dashboard'></i></span>Dashboard</a>
+                </li>
+                <li class="menu-list">
+                    <a href="#"><span><i class='bx bx-cube-alt'></i></span>Widget</a>
+                </li>
+                <li class="menu-list">
+                    <a href="#"><span><i class='bx bx-dumbbell'></i></span>UI Elements</a>
+                </li>
+                <li class="menu-list">
+                    <a href="#"><span><i class='bx bxs-edit'></i></span>Editors</a>
+                </li>
+                <li class="menu-list">
+                    <a href="#"><span><i class='bx bx-line-chart'></i></span>Chart</a>
+                </li>
+                <li class="menu-list">
+                    <a href="#"><span><i class='bx bx-table'></i></span>Table</a>
+                </li>
+                <li class="menu-list">
+                    <a href="#"><span><i class='bx bxs-user'></i></span>User pages</a>
+                </li>
+                <li class="menu-list">
+                    <a href="#"><span><i class='bx bxs-map'></i></span>Maps</a>
+                </li>
+                <li class="menu-list">
+                    <a href="#"><span><i class='bx bx-bell'></i></span>Notification</a>
+                </li>
+                <li class="menu-list">
+                    <a href="#"><span><i class='bx bxs-camera'></i></span>Gallery</a>
+                </li>
+                <li class="menu-list">
+                    <a href="#"><span><i class='bx bx-log-out'></i></span>Log Out</a>
+                </li>
+            </ul>
+            <div class="footer-sidebar-menu">
+                <ul>
+                    <li class="menu-list"><a href=""><span><i class='bx bx-help-circle'></i></span>Help</a>
+                    </li>
+                    <li class="menu-list"><a href=""><span><i class='bx bx-cog' ></i></span>Settings</a>
+                    </li>
+                </ul>
             </div>
-            <div class="sidebar">
-                <a href="#">
-                    <span><i class='bx bxs-dashboard' ></i></span>
-                    <h3>Dashboard</h3>
-                </a>
-                <a href="#">
-                    <span><i class='bx bx-cube-alt'></i></span>
-                    <h3>Widget</h3>
-                </a>
-                <a href="#">
-                    <span><i class='bx bx-dumbbell'></i></span>
-                    <h3>UI Elements</h3>
-                </a>
-                <a href="#">
-                    <span><i class='bx bx-objects-vertical-center'></i></span>
-                    <h3>Advance UI</h3>
-                </a>
-                <a href="#">
-                    <span><i class='bx bx-headphone'></i></span>
-                    <h3>Form Elements</h3>
-                </a>
-                <a href="#">
-                    <span><i class='bx bxs-edit'></i></span>
-                    <h3>Editors</h3>
-                </a>
-                <a href="#">
-                    <span><i class='bx bx-line-chart'></i></span>
-                    <h3>Chart</h3>
-                </a>
-                <a href="#">
-                    <span><i class='bx bx-table'></i></span>
-                    <h3>Table</h3>
-                </a>
-                <a href="#">
-                    <span><i class='bx bx-bell'></i></span>
-                    <h3>Notification</h3>
-                </a>
-                <a href="#">
-                    <span><i class='bx bxs-user'></i></span>
-                    <h3>User pages</h3>
-                </a>
-                <a href="#">
-                    <span><i class='bx bxs-map'></i></span>
-                    <h3>Maps</h3>
-                </a>
-                <a href="#">
-                    <span><i class='bx bxs-camera'></i></span>
-                    <h3>Gallery</h3>
-                </a>
-                <a href="#">
-                    <span><i class='bx bx-log-out'></i></span>
-                    <h3>Log Out</h3>
-                </a>
+        </div>
+    </section>
+    <!-- sidebar end -->
+
+    <!-- Mini sidebar area -->
+    <section class="sidebar-mini">
+        <div class="sidebar--menu--mini">
+            <ul>
+                <li class="menu-list active">
+                    <a href="#"><span><i class='bx bxs-dashboard'></i></span></a>
+                </li>
+                <li class="menu-list">
+                    <a href="#"><span><i class='bx bx-cube-alt'></i></span></a>
+                </li>
+                <li class="menu-list">
+                    <a href="#"><span><i class='bx bx-dumbbell'></i></span></a>
+                </li>
+                <li class="menu-list">
+                    <a href="#"><span><i class='bx bxs-edit'></i></span></a>
+                </li>
+                <li class="menu-list">
+                    <a href="#"><span><i class='bx bx-line-chart'></i></span></a>
+                </li>
+                <li class="menu-list">
+                    <a href="#"><span><i class='bx bx-table'></i></span></a>
+                </li>
+                <li class="menu-list">
+                    <a href="#"><span><i class='bx bxs-user'></i></span></a>
+                </li>
+                <li class="menu-list">
+                    <a href="#"><span><i class='bx bxs-map'></i></span></a>
+                </li>
+                <li class="menu-list">
+                    <a href="#"><span><i class='bx bx-bell'></i></span></a>
+                </li>
+                <li class="menu-list">
+                    <a href="#"><span><i class='bx bxs-camera'></i></span></a>
+                </li>
+                <li class="menu-list">
+                    <a href="#"><span><i class='bx bx-log-out'></i></span></a>
+                </li>
+            </ul>
+            <div class="footer-sidebar-menu--mini">
+                <ul>
+                    <li class="menu-list"><a href=""><span><i class='bx bx-help-circle'></i></span></a>
+                    </li>
+                    <li class="menu-list"><a href=""><span><i class='bx bx-cog' ></i></span></a>
+                    </li>
+                </ul>
             </div>
-        </aside>
-    </div>
+        </div>
+    </section>
+    <!-- Mini sidebar end -->
+
+    <section class="header-top">
+        <div class="toggle-bar">
+            <span><i class='bx bx-menu'></i></span>
+        </div>
+        <div class="user-profile-area">
+            <a href="#" class="notification-icon">
+                <span><i class='bx bx-bell'></i></span>
+                <div class="notification-count">2</div>
+            </a>
+            <a href="#" class="message-icon">
+                <span><i class='bx bx-envelope'></i></span>
+                <div class="message-count">3</div>
+            </a>
+            <a href="#" class="user-photo">
+                <img src="assets/img/user.jpg" alt="">
+            </a>
+            <a href="#" class="setting-option">
+                <span><i class='bx bx-cog' ></i></span>
+            </a>
+        </div>     
+
+    </section>
     
 
 

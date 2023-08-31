@@ -1,1 +1,1 @@
-# This is a Dashboard template useing by html and css 
+# This is a dashboard template which making by using html and css 
