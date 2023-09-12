@@ -1,121 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
     <!-- All CSS file link -->
     <!-- Boxicons-v2.1.4 -->
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">    
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    />
     <!-- Style CSS -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!-- Sidebar area start here -->
     <section class="sidebar">
-        <div class="sidebar--brand">
-            <a href="#" class="brand">
-                <img src="assets/img/brand-logo.png" alt="">
-                <h2 class="brand-name">Company Name</h2> 
+      <div class="sidebar--brand">
+        <a href="#" class="brand">
+          <img src="assets/img/brand-logo.png" alt="" />
+          <h2 class="brand-name">Company name</h2>
+        </a>
+      </div>
+      <nav>
+        <ul class="sidebar-menu">
+          <li><a class="ac" href="#">
+              <i class="bx bxs-dashboard sidebar-icon"></i>Dashboard<i class="bx bx-chevron-right right-arrow"></i>
             </a>
-        </div>
-        <div class="sidebar--menu">
-            <ul>
-                <li class="menu-list active">
-                    <a href="#"><span><i class='bx bxs-dashboard'></i></span>Dashboard</a>
-                </li>
-                <li class="menu-list">
-                    <a href="#"><span><i class='bx bx-cube-alt'></i></span>Widget</a>
-                </li>
-                <li class="menu-list">
-                    <a href="#"><span><i class='bx bx-dumbbell'></i></span>UI Elements</a>
-                </li>
-                <li class="menu-list">
-                    <a href="#"><span><i class='bx bxs-edit'></i></span>Editors</a>
-                </li>
-                <li class="menu-list">
-                    <a href="#"><span><i class='bx bx-line-chart'></i></span>Chart</a>
-                </li>
-                <li class="menu-list">
-                    <a href="#"><span><i class='bx bx-table'></i></span>Table</a>
-                </li>
-                <li class="menu-list">
-                    <a href="#"><span><i class='bx bxs-user'></i></span>User pages</a>
-                </li>
-                <li class="menu-list">
-                    <a href="#"><span><i class='bx bxs-map'></i></span>Maps</a>
-                </li>
-                <li class="menu-list">
-                    <a href="#"><span><i class='bx bx-bell'></i></span>Notification</a>
-                </li>
-                <li class="menu-list">
-                    <a href="#"><span><i class='bx bxs-camera'></i></span>Gallery</a>
-                </li>
-                <li class="menu-list">
-                    <a href="#"><span><i class='bx bx-log-out'></i></span>Log Out</a>
-                </li>
+            <ul class="sub-menu">
+              <li><a href="#">CRM</a></li>
+              <li><a href="#">Ecommerce</a></li>
+              <li><a href="#">Crypto</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">NFT</a></li>
             </ul>
-            <div class="footer-sidebar-menu">
-                <ul>
-                    <li class="menu-list"><a href=""><span><i class='bx bx-help-circle'></i></span>Help</a>
-                    </li>
-                    <li class="menu-list"><a href=""><span><i class='bx bx-cog' ></i></span>Settings</a>
-                    </li>
-                </ul>
-            </div>
+          </li>
+          <li><a href="#"><i class="bx bx-cube-alt sidebar-icon"></i>Widget</a></li>
+          <li><a href="#"><i class="bx bx-dumbbell sidebar-icon"></i>UI Elements</a></li>
+          <li><a href="#">
+                <i class="bx bxs-edit sidebar-icon"></i>Editors<i class="bx bx-chevron-right right-arrow"></i>
+              </a>
+            <ul class="sub-menu">
+              <li><a href="#">CRM</a></li>
+              <li><a href="#">Ecommerce</a></li>
+              <li><a href="#">Crypto</a></li>
+              <li><a href="#">Jobs</a></li>                  
+            </ul>
+          </li>
+          <li><a href="#"><i class="bx bx-line-chart sidebar-icon"></i>Chart</a></li>
+          <li><a href="#"><i class="bx bx-table sidebar-icon"></i>Table</a></li>
+          <li><a href="#">
+                <i class="bx bxs-user sidebar-icon"></i>User pages<i class="bx bx-chevron-right right-arrow"></i>
+              </a>
+            <ul class="sub-menu">
+              <li><a href="#">CRM</a></li>
+              <li><a href="#">Ecommerce</a></li>
+              <li><a href="#">Crypto</a></li>
+              <li><a href="#">Jobs</a></li>                  
+            </ul>
+          </li>
+          <li><a href="#"><i class="bx bxs-map sidebar-icon"></i>Maps</a></li>
+          <li><a href="#"><i class="bx bx-bell sidebar-icon"></i>Notification</a></li>
+          <li><a href="#"><i class="bx bxs-camera sidebar-icon"></i>Gallery</a></li>
+          <li><a href="#"><i class="bx bx-log-out sidebar-icon"></i>Log Out</a></li>
+        </ul>
+        <div class="sidebar-footer-menu">
+          <ul class="sidebar-menu footer-sidebar-menu">
+            <li>
+              <a href="#"><i class="bx bx-help-circle sidebar-icon"></i>Help</a>
+            </li>
+            <li>
+              <a href="#"><i class="bx bx-cog sidebar-icon"></i>Settings</a>
+            </li>
+          </ul>
         </div>
+      </nav>
     </section>
     <!-- sidebar end -->
-
-    <!-- Mini sidebar area -->
-    <section class="sidebar-mini">
-        <div class="sidebar--menu--mini">
-            <ul>
-                <li class="menu-list active">
-                    <a href="#"><span><i class='bx bxs-dashboard'></i></span></a>
-                </li>
-                <li class="menu-list">
-                    <a href="#"><span><i class='bx bx-cube-alt'></i></span></a>
-                </li>
-                <li class="menu-list">
-                    <a href="#"><span><i class='bx bx-dumbbell'></i></span></a>
-                </li>
-                <li class="menu-list">
-                    <a href="#"><span><i class='bx bxs-edit'></i></span></a>
-                </li>
-                <li class="menu-list">
-                    <a href="#"><span><i class='bx bx-line-chart'></i></span></a>
-                </li>
-                <li class="menu-list">
-                    <a href="#"><span><i class='bx bx-table'></i></span></a>
-                </li>
-                <li class="menu-list">
-                    <a href="#"><span><i class='bx bxs-user'></i></span></a>
-                </li>
-                <li class="menu-list">
-                    <a href="#"><span><i class='bx bxs-map'></i></span></a>
-                </li>
-                <li class="menu-list">
-                    <a href="#"><span><i class='bx bx-bell'></i></span></a>
-                </li>
-                <li class="menu-list">
-                    <a href="#"><span><i class='bx bxs-camera'></i></span></a>
-                </li>
-                <li class="menu-list">
-                    <a href="#"><span><i class='bx bx-log-out'></i></span></a>
-                </li>
-            </ul>
-            <div class="footer-sidebar-menu--mini">
-                <ul>
-                    <li class="menu-list"><a href=""><span><i class='bx bx-help-circle'></i></span></a>
-                    </li>
-                    <li class="menu-list"><a href=""><span><i class='bx bx-cog' ></i></span></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <!-- Mini sidebar end -->
 
     <!-- Header top -->
     <section class="header-top">
@@ -139,8 +100,9 @@
             </a>
         </div> 
     </section>
+    
     <!-- Chart Dashboard and Traffic Progress bar -->
-    <section class="chart-dashboard--trafic-progress">
+    <!-- <section class="chart-dashboard--trafic-progress">
         <div class="chart-dashboard">
             <div class="dashboard-overview">
                 <h3 class="dash-view-title">Dashboard <span> Overview of Latest Month</span></h3>
@@ -163,21 +125,11 @@
         <div class="trafic-progress">
 
         </div>
-    </section>
-    
+    </section> -->
 
-
-
-
-
-
-
-
-    
     <!-- All js file -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- Main js file -->
     <script src="assets/js/min.js"></script>
-</body>
-
+  </body>
 </html>
